@@ -10,33 +10,232 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AcademyRouteImport } from './routes/academy'
+import { Route as AccediRouteImport } from './routes/accedi'
+import { Route as AnalisiRouteImport } from './routes/analisi'
+import { Route as BenvenutaRouteImport } from './routes/benvenuta'
+import { Route as CalendarioRouteImport } from './routes/calendario'
+import { Route as CoachRouteImport } from './routes/coach'
+import { Route as DiarioRouteImport } from './routes/diario'
+import { Route as IdeeRouteImport } from './routes/idee'
+import { Route as ImpostazioniRouteImport } from './routes/impostazioni'
+import { Route as ListingRouteImport } from './routes/listing'
+import { Route as NegozioRouteImport } from './routes/negozio'
+import { Route as OnboardingRouteImport } from './routes/onboarding'
+import { Route as PianoRouteImport } from './routes/piano'
+import { Route as RegistratiRouteImport } from './routes/registrati'
+import { Route as RicercaRouteImport } from './routes/ricerca'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AcademyRoute = AcademyRouteImport.update({
+  id: '/academy',
+  path: '/academy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AccediRoute = AccediRouteImport.update({
+  id: '/accedi',
+  path: '/accedi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AnalisiRoute = AnalisiRouteImport.update({
+  id: '/analisi',
+  path: '/analisi',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BenvenutaRoute = BenvenutaRouteImport.update({
+  id: '/benvenuta',
+  path: '/benvenuta',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CalendarioRoute = CalendarioRouteImport.update({
+  id: '/calendario',
+  path: '/calendario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const CoachRoute = CoachRouteImport.update({
+  id: '/coach',
+  path: '/coach',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DiarioRoute = DiarioRouteImport.update({
+  id: '/diario',
+  path: '/diario',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const IdeeRoute = IdeeRouteImport.update({
+  id: '/idee',
+  path: '/idee',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ImpostazioniRoute = ImpostazioniRouteImport.update({
+  id: '/impostazioni',
+  path: '/impostazioni',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ListingRoute = ListingRouteImport.update({
+  id: '/listing',
+  path: '/listing',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const NegozioRoute = NegozioRouteImport.update({
+  id: '/negozio',
+  path: '/negozio',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OnboardingRoute = OnboardingRouteImport.update({
+  id: '/onboarding',
+  path: '/onboarding',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PianoRoute = PianoRouteImport.update({
+  id: '/piano',
+  path: '/piano',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegistratiRoute = RegistratiRouteImport.update({
+  id: '/registrati',
+  path: '/registrati',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RicercaRoute = RicercaRouteImport.update({
+  id: '/ricerca',
+  path: '/ricerca',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/academy': typeof AcademyRoute
+  '/accedi': typeof AccediRoute
+  '/analisi': typeof AnalisiRoute
+  '/benvenuta': typeof BenvenutaRoute
+  '/calendario': typeof CalendarioRoute
+  '/coach': typeof CoachRoute
+  '/diario': typeof DiarioRoute
+  '/idee': typeof IdeeRoute
+  '/impostazioni': typeof ImpostazioniRoute
+  '/listing': typeof ListingRoute
+  '/negozio': typeof NegozioRoute
+  '/onboarding': typeof OnboardingRoute
+  '/piano': typeof PianoRoute
+  '/registrati': typeof RegistratiRoute
+  '/ricerca': typeof RicercaRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/academy': typeof AcademyRoute
+  '/accedi': typeof AccediRoute
+  '/analisi': typeof AnalisiRoute
+  '/benvenuta': typeof BenvenutaRoute
+  '/calendario': typeof CalendarioRoute
+  '/coach': typeof CoachRoute
+  '/diario': typeof DiarioRoute
+  '/idee': typeof IdeeRoute
+  '/impostazioni': typeof ImpostazioniRoute
+  '/listing': typeof ListingRoute
+  '/negozio': typeof NegozioRoute
+  '/onboarding': typeof OnboardingRoute
+  '/piano': typeof PianoRoute
+  '/registrati': typeof RegistratiRoute
+  '/ricerca': typeof RicercaRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/academy': typeof AcademyRoute
+  '/accedi': typeof AccediRoute
+  '/analisi': typeof AnalisiRoute
+  '/benvenuta': typeof BenvenutaRoute
+  '/calendario': typeof CalendarioRoute
+  '/coach': typeof CoachRoute
+  '/diario': typeof DiarioRoute
+  '/idee': typeof IdeeRoute
+  '/impostazioni': typeof ImpostazioniRoute
+  '/listing': typeof ListingRoute
+  '/negozio': typeof NegozioRoute
+  '/onboarding': typeof OnboardingRoute
+  '/piano': typeof PianoRoute
+  '/registrati': typeof RegistratiRoute
+  '/ricerca': typeof RicercaRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/academy'
+    | '/accedi'
+    | '/analisi'
+    | '/benvenuta'
+    | '/calendario'
+    | '/coach'
+    | '/diario'
+    | '/idee'
+    | '/impostazioni'
+    | '/listing'
+    | '/negozio'
+    | '/onboarding'
+    | '/piano'
+    | '/registrati'
+    | '/ricerca'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/academy'
+    | '/accedi'
+    | '/analisi'
+    | '/benvenuta'
+    | '/calendario'
+    | '/coach'
+    | '/diario'
+    | '/idee'
+    | '/impostazioni'
+    | '/listing'
+    | '/negozio'
+    | '/onboarding'
+    | '/piano'
+    | '/registrati'
+    | '/ricerca'
+  id:
+    | '__root__'
+    | '/'
+    | '/academy'
+    | '/accedi'
+    | '/analisi'
+    | '/benvenuta'
+    | '/calendario'
+    | '/coach'
+    | '/diario'
+    | '/idee'
+    | '/impostazioni'
+    | '/listing'
+    | '/negozio'
+    | '/onboarding'
+    | '/piano'
+    | '/registrati'
+    | '/ricerca'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AcademyRoute: typeof AcademyRoute
+  AccediRoute: typeof AccediRoute
+  AnalisiRoute: typeof AnalisiRoute
+  BenvenutaRoute: typeof BenvenutaRoute
+  CalendarioRoute: typeof CalendarioRoute
+  CoachRoute: typeof CoachRoute
+  DiarioRoute: typeof DiarioRoute
+  IdeeRoute: typeof IdeeRoute
+  ImpostazioniRoute: typeof ImpostazioniRoute
+  ListingRoute: typeof ListingRoute
+  NegozioRoute: typeof NegozioRoute
+  OnboardingRoute: typeof OnboardingRoute
+  PianoRoute: typeof PianoRoute
+  RegistratiRoute: typeof RegistratiRoute
+  RicercaRoute: typeof RicercaRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +247,131 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/academy': {
+      id: '/academy'
+      path: '/academy'
+      fullPath: '/academy'
+      preLoaderRoute: typeof AcademyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/accedi': {
+      id: '/accedi'
+      path: '/accedi'
+      fullPath: '/accedi'
+      preLoaderRoute: typeof AccediRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/analisi': {
+      id: '/analisi'
+      path: '/analisi'
+      fullPath: '/analisi'
+      preLoaderRoute: typeof AnalisiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/benvenuta': {
+      id: '/benvenuta'
+      path: '/benvenuta'
+      fullPath: '/benvenuta'
+      preLoaderRoute: typeof BenvenutaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/calendario': {
+      id: '/calendario'
+      path: '/calendario'
+      fullPath: '/calendario'
+      preLoaderRoute: typeof CalendarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/coach': {
+      id: '/coach'
+      path: '/coach'
+      fullPath: '/coach'
+      preLoaderRoute: typeof CoachRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/diario': {
+      id: '/diario'
+      path: '/diario'
+      fullPath: '/diario'
+      preLoaderRoute: typeof DiarioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/idee': {
+      id: '/idee'
+      path: '/idee'
+      fullPath: '/idee'
+      preLoaderRoute: typeof IdeeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/impostazioni': {
+      id: '/impostazioni'
+      path: '/impostazioni'
+      fullPath: '/impostazioni'
+      preLoaderRoute: typeof ImpostazioniRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/listing': {
+      id: '/listing'
+      path: '/listing'
+      fullPath: '/listing'
+      preLoaderRoute: typeof ListingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/negozio': {
+      id: '/negozio'
+      path: '/negozio'
+      fullPath: '/negozio'
+      preLoaderRoute: typeof NegozioRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/onboarding': {
+      id: '/onboarding'
+      path: '/onboarding'
+      fullPath: '/onboarding'
+      preLoaderRoute: typeof OnboardingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/piano': {
+      id: '/piano'
+      path: '/piano'
+      fullPath: '/piano'
+      preLoaderRoute: typeof PianoRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/registrati': {
+      id: '/registrati'
+      path: '/registrati'
+      fullPath: '/registrati'
+      preLoaderRoute: typeof RegistratiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ricerca': {
+      id: '/ricerca'
+      path: '/ricerca'
+      fullPath: '/ricerca'
+      preLoaderRoute: typeof RicercaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AcademyRoute: AcademyRoute,
+  AccediRoute: AccediRoute,
+  AnalisiRoute: AnalisiRoute,
+  BenvenutaRoute: BenvenutaRoute,
+  CalendarioRoute: CalendarioRoute,
+  CoachRoute: CoachRoute,
+  DiarioRoute: DiarioRoute,
+  IdeeRoute: IdeeRoute,
+  ImpostazioniRoute: ImpostazioniRoute,
+  ListingRoute: ListingRoute,
+  NegozioRoute: NegozioRoute,
+  OnboardingRoute: OnboardingRoute,
+  PianoRoute: PianoRoute,
+  RegistratiRoute: RegistratiRoute,
+  RicercaRoute: RicercaRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

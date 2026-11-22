@@ -28,3 +28,8 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+## Frontend architecture
+- Keep this delivery design-only: use clearly labeled static previews and lightweight component-local interactions so Cursor can add production services separately.
+- Keep shared visual primitives and the application shell in `src/components/icoach/shared.tsx`, domain screens in page modules, and leaf route files thin with individual metadata.
+- Define all visual colors, typography and reusable layout styling in `src/styles.css` so the warm editorial design remains consistent across modules.
